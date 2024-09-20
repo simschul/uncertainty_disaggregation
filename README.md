@@ -15,4 +15,5 @@ following data:
 -   Intermediate results from the article "“Estimating the uncertainty
     of the greenhouse gas emission accounts in Global Multi-Regional
     Input-Output analysis” available here (for details how those data
-    was generated, see the paper and its code):
+    was generated, see the paper and its code): 10.5281/zenodo.13806019
+    . Download them and save them in the `./data` folder
