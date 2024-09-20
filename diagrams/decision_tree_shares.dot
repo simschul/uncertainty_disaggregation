@@ -1,0 +1,20 @@
+digraph DecisionTree {
+
+node[shape = "ellipse"]
+alpha[label = "var(&alpha;) == 0"]
+beta[label = "all(is.finite(&beta;)"]
+
+node[shape = "polygon"]
+dir1[label = "Dir(&alpha;;1/\sum(&alpha;))"]
+dirmaxent[label = "Dir(&alpha;; &gamma;*)"]
+dirg[label = "Dirg(&alpha;; &beta;)"]
+
+edge[]
+beta -> alpha [label = "FALSE"]
+beta -> dirg [label = "TRUE"]
+alpha -> dir1 [label = "TRUE"]
+alpha -> dirmaxent [label = "FALSE"]
+
+
+
+}

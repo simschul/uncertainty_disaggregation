@@ -1,0 +1,36 @@
+digraph DecisionTree {
+
+  node[shape = "ellipse", fontname="Helvetica", fillcolor="grey80",
+  style = "filled", color="white"]
+  mean[label = "Best-guess?"]
+  sd[label = "Standard Deviation?"]
+  AorB[label = "Bounds?"]
+  AandB[label = "Bounds?"]
+  A[label = "Lower bound = 0?"]
+
+node[shape = "polygon", fontname="Helvetica-bold", fillcolor="#c9b499",
+  style = "filled", color="white"]
+  norm[label = "Normal"]
+  exp[label = "Exponential"]
+  unif[label = "Uniform"]
+  truncnorm[label = "Truncated Normal"]
+
+  node[color = "white",fillcolor="white", fontname="Helvetica", fontsize= 12]
+  X1[label = "not implemented"]
+  X2[label = "not implemented"]
+
+  edge[fontname="Helvetica"]
+  mean -> sd [label = "Yes"]
+  sd -> AorB [label = "Yes"]
+  AandB -> unif [label = "Yes"]
+  AorB -> truncnorm [label = "Yes"]
+  A -> exp [label = "Yes"]
+  mean -> AandB [label = "No"]
+  sd -> A [label = "No"]
+  AandB -> X1 [label = "No"]
+  A -> X2 [label = "No"]
+  AorB -> norm [label = "No"]
+
+
+
+}
