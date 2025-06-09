@@ -7,7 +7,7 @@
 .feather
 *.qs
 intermediate_results/
-figures_overleaf/
+figures_overleaf
 .drawio
-_extensions
-archive
+_extensions/
+archive/
