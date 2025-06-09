@@ -1,8 +1,7 @@
-# Code for: "Divide and rule: A practical overview of uncertainty propagation in the case of data disaggregation"
+# Code for: "When correlation matter: on uncertainty propagation in the case of data disaggregation"
 
-This is the code for reproducing the results for our study on “Divide
-and rule: A practical overview of uncertainty propagation in the case of
-data disaggregation” submitted to the Journal of Industrial Ecology
+This is the code for reproducing the results for our study on “When correlation matter: on uncertainty propagation in the case of data disaggregation” 
+submitted to the Journal of Industrial Ecology
 (JIE).
 
 ## Data required
@@ -30,3 +29,8 @@ following data and put them into the `./data` folder:
     appropriate version of renv. It will also ask you if you want to
     download and install all the packages it needs by running
     `renv::restore()`.
+    
+4. You might need to install the `MaxentDisaggregation` package manually: 
+```
+renv::install("simschul/MaxentDisaggregation")
+```
