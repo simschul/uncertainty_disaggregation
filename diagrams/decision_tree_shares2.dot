@@ -1,0 +1,25 @@
+digraph DecisionTree {
+
+  node[shape = "ellipse", fontname="Helvetica", fillcolor="grey80"
+  style = "filled", color="white"]
+
+  alpha[label = "Best-guesses?"]
+  beta[label = "Standard Deviations?"]
+
+ node[shape = "polygon", fontname="Helvetica-bold",
+  fillcolor="#c9b499",style = "filled", color="white"]
+  dir1[label = "Uniform Dirichlet"]
+  dirmaxent[label = "Standard Dirichlet"]
+  dirg[label = "Generalised Dirichlet"]
+  dirn[label = "Nested Dirichlet"]
+
+  edge[fontname="Helvetica"]
+  alpha -> dir1 [label = "No"]
+  alpha -> beta [label = "Yes"]
+  beta -> dirg [label = "Yes"]
+  beta -> dirn [label = "Partially"]
+  beta -> dirmaxent [label = "No"]
+  alpha -> dirn [label = "Partially"]
+
+
+}

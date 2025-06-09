@@ -1,0 +1,14 @@
+.Rproj.user
+.Rhistory
+.RData
+.httr-oauth
+.DS_Store
+.quarto
+.xlsx
+.feather
+*.qs
+intermediate_results/
+figures_overleaf/
+.drawio
+_extensions
+archive
